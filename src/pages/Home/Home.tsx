@@ -11,6 +11,7 @@ const Home = () => {
     return (
         <div>
             <Header/>
+            수정해봤어요
             <About/>
             <Skills/>
             <Archiving/>
