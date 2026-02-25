@@ -1,0 +1,65 @@
+.card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 600px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  position: relative;
+}
+.projectIcon {
+    background: #000;
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    text-align: center;
+    color: #ffffff;
+}
+.memberBadge {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background-color: #72d2ff;  
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.title {
+  font-family: 'Noto sans KR', sans-serif; 
+  font-size: 44px;
+  margin-bottom: 5px;
+}
+
+.divider {
+  border: 0;
+  border-top: 2px solid #000; 
+  margin: 15px 0;
+}
+
+.descriptionList {
+  padding-left: 20px;
+  margin: 15px 0;
+}
+
+.descriptionList li {
+  margin-bottom: 8px;
+  list-style-type: disc;
+}
+
+.date {
+  text-align: right;
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
+.skillTitle {
+    margin-bottom: 10px;
+}
+
+.skillList {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
