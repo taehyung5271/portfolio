@@ -1,14 +1,24 @@
 import { useNavigate } from "react-router-dom";
+import About from "./sections/About";
+import Archiving from "./sections/Archiving";
+import Skills from "./sections/Skills";
+import Projects from "./sections/Projects";
+import Career from "./sections/Career";
+import Header from "../../widgets/header/Header";
+import Footer from "../../widgets/footer/Footer";
 
 const Home = () => {
     const navigate = useNavigate();
-    
+
     return (
         <div>
-            <h1>여기는 홈입니다.</h1>
-            <button onClick={() => navigate('/project')}>
-                프로젝트 상세 보기
-            </button>
+            <Header/>
+            <About/>
+            <Skills/>
+            <Archiving/>
+            <Projects/>
+            <Career/>
+            <Footer/>
         </div>
     )
 }

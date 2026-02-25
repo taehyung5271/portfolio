@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 12px; 
+  width: fit-content;
+  padding-bottom: 4px;
+  margin-bottom: 30px;
+}
+
+.icon {
+  width: 40px; 
+  height: auto;
+}
+
+.title {
+  font-size: 3rem; 
+  font-weight: 900; 
+  text-transform: uppercase;
+  letter-spacing: -2px; 
+  border-bottom: 5px solid #000000; 
+  margin: 0;
+  color: #000000;
+}
