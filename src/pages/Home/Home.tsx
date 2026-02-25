@@ -1,4 +1,3 @@
-// import { useNavigate } from "react-router-dom";
 import About from "./sections/About";
 import Archiving from "./sections/Archiving";
 import Skills from "./sections/Skills";
@@ -8,7 +7,6 @@ import Header from "../../widgets/header/Header";
 import Footer from "../../widgets/footer/Footer";
 
 const Home = () => {
-    // const navigate = useNavigate();
 
     return (
         <div>
