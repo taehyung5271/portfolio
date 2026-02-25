@@ -1,5 +1,5 @@
-import SectionTitle from "../../../components/ui/SectionTitle";
-import ProjectCard from "../../../components/ui/ProjectCard";
+import SectionTitle from "../../../Components/UI/SectionTitle";
+import ProjectCard from "../../../Components/UI/ProjectCard";
 
 const Projects = () => {
   const projectList = [

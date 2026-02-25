@@ -1,4 +1,4 @@
-import SectionTitle from "../../../components/ui/SectionTitle";
+import SectionTitle from "../../../Components/UI/SectionTitle";
 
 const About = () => {
     return (

@@ -1,5 +1,5 @@
 import styles from "./ProjectCard.module.css";
-import SkillTag from "../ui/SkillTag";
+import SkillTag from "./SkillTag";
 
 interface ProjectProps {
   title: string;
