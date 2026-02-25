@@ -1,17 +1,17 @@
-import About from "./sections/About";
-import Archiving from "./sections/Archiving";
-import Skills from "./sections/Skills";
-import Projects from "./sections/Projects";
-import Career from "./sections/Career";
-import Header from "../../widgets/header/Header";
-import Footer from "../../widgets/footer/Footer";
+import About from "./Sections/About";
+import Archiving from "./Sections/Archiving";
+import Skills from "./Sections/Skills";
+import Projects from "./Sections/Projects";
+import Career from "./Sections/Career";
+import Header from "../../Widgets/Header/Header";
+import Footer from "../../Widgets/Footer/Footer";
+import styles from "./Home.module.css"
 
 const Home = () => {
 
     return (
-        <div>
+        <div className={styles.container}>
             <Header/>
-            수정해봤어요
             <About/>
             <Skills/>
             <Archiving/>
