@@ -1,5 +1,5 @@
-import SectionTitle from "../../../Components/UI/SectionTitle";
-import SkillTag from "../../../Components/UI/SkillTag";
+import SectionTitle from "../../../components/ui/SectionTitle";
+import SkillTag from "../../../components/ui/SkillTag";
 
 const Skills = () => {
     return (

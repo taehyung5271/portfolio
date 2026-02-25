@@ -1,4 +1,4 @@
-import SectionTitle from "../../../Components/UI/SectionTitle";
+import SectionTitle from "../../../components/ui/SectionTitle";
 
 const Archiving = () => {
     return (
