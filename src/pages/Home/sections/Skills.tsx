@@ -9,7 +9,7 @@ const Skills = () => {
                 <SectionTitle title="Skills" />
             </div>
             
-
+            test
             <SkillTag text="javaScript" bgColor="#000" txtColor="#FFF"/>
         </div>
     )
