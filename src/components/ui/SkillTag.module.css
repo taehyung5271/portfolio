@@ -1,0 +1,15 @@
+.container {
+    display: flex;     
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 4px 12px; 
+    border-radius: 4px; 
+}
+
+.name2 {
+    font-family: 'Noto Sans KR', sans-serif;  
+    font-size: 14px; 
+    font-weight: 700;   
+    margin: 0;          
+}
