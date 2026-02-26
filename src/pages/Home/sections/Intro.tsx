@@ -18,7 +18,7 @@ const Intro = forwardRef<HTMLElement, IntroProps>(function Intro(_props, ref) {
         <div className={styles.container}>
           <p className={styles.title}>- 김태형 -</p>
           <p className={styles.title}>풀스택 개발자 포트폴리오</p>
-          <hr />
+          <hr className={styles.hr}/>
           <p className={styles.content}>안녕하세요.</p>
           <p className={styles.content}>사용자의,사용자에 의한,사용자를 위한</p>
           <p className={styles.content}>풀스택 개발자</p>

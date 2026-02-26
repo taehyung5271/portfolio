@@ -1,66 +1,133 @@
 .card {
-  background: #ffffff;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  padding: 30px;
-  max-width: 600px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  position: relative;
+  background: #fff;
+  border: 2px solid #bfbfbf;
+  border-radius: 18px;
+  padding: 1.5rem;
+  width: 450px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
 }
+
+.topRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 4px;
+}
+
 .projectIcon {
-    background: #000;
-    width: 80px;
-    height: 80px;
-    border-radius: 8px;
-    text-align: center;
-    color: #ffffff;
+  width: 70px;
+  height: 70px;
+  border-radius: 18px;
+  background: #d9d9d9;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .memberBadge {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  background-color: #72d2ff;  
-  color: white;
-  padding: 8px 16px;
-  border-radius: 8px;
-  font-weight: bold;
+  background: #27c7f7;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+
+  padding: 14px 12px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.titleBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 4px;
 }
 
 .title {
-  font-family: 'Noto sans KR', sans-serif; 
-  font-size: 44px;
-  margin-bottom: 5px;
+  margin: 0.3rem;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -1px;
 }
 
-.divider {
-  border: 0;
-  border-top: 2px solid #000; 
-  margin: 15px 0;
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 16px;
+  font-weight: 900;
+  color: #6b6b6b;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.linkIcon {
+  font-size: 16px;
+  color: #6b6b6b;
+}
+
+.hr {
+  height: 2px;
+  background: #111;
+  margin: 12px 0 10px;
+}
+
+.body {
+  margin-bottom: 28px;
+}
+
+.subTitle {
+  margin: 0 0 16px;
+  font-size: 18px;
+  font-weight: 1000;
 }
 
 .descriptionList {
-  padding-left: 20px;
-  margin: 15px 0;
+  margin: 0;
+  padding-left: 16px;
 }
 
 .descriptionList li {
-  margin-bottom: 8px;
   list-style-type: disc;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  line-height: 1.5;
 }
 
-.date {
-  text-align: right;
-  color: #888;
-  font-size: 0.9rem;
-  margin-top: 20px;
+.stackSection {
+  margin-top: 10px;
 }
-.skillTitle {
-    margin-bottom: 10px;
+
+.stackTitle {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.stackHr {
+  height: 1.5px;
+  background: #000;
+  margin: 12px 0 18px;
 }
 
 .skillList {
-    margin-top: 10px;
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.date {
+  margin: 18px 0 0;
+  text-align: right;
+  font-size: 16px;
+  color: #8b8b8b;
 }
