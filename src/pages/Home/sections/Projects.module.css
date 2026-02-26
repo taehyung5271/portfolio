@@ -1,8 +1,22 @@
 .section {
-    padding-top: 20px;
-    width: 100%;
-    justify-content: center;
-    align-items: start;
-    height: 1200px;
-    background: blue;
+  padding-top: 30px;
+  width: 100%;
+  justify-content: center;
+  align-items: start;
+  height: 1200px;
+  background-color: chocolate;
+  height: fit-content;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1100px;
+
+  margin: 0 auto;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  padding: 2rem 4rem;
 }

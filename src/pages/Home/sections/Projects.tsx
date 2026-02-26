@@ -23,6 +23,40 @@ const Projects = () => {
         { name: "postgresql", bgColor: "#336791", txtColor: "#FFFFFF" },
       ],
     },
+    {
+      id: 2,
+      title: "모스트인 직원관리 시스템(ERP)",
+      member_count: 1,
+      start_date: "2024-12-18",
+      end_date: "2025-06-11",
+      service_link:"https://github.com/taehyung5271/mostIN",
+      descriptions: [
+        "파견사원의 출퇴근 관리 자동화",
+        "상품 발주 요청 간소화 (바코드 + 박스 수량 기반)",
+        "출퇴근 위치 확인을 GPS 기반 자동화"
+      ],
+      skills:[
+        { name:"java", bgColor: "#000000",txtColor: "#FFFFFF"},
+        { name:"SQLite", bgColor:"#336791",txtColor: "#fff"}
+      ],
+    },
+    {
+      id: 3,
+      title: "모스트인 직원관리 시스템(ERP)",
+      member_count: 1,
+      start_date: "2024-12-18",
+      end_date: "2025-06-11",
+      service_link:"https://github.com/taehyung5271/mostIN",
+      descriptions: [
+        "파견사원의 출퇴근 관리 자동화",
+        "상품 발주 요청 간소화 (바코드 + 박스 수량 기반)",
+        "출퇴근 위치 확인을 GPS 기반 자동화"
+      ],
+      skills:[
+        { name:"java", bgColor: "#000000",txtColor: "#FFFFFF"},
+        { name:"SQLite", bgColor:"#336791",txtColor: "#fff"}
+      ],
+    }
   ];
 
   return (
@@ -30,7 +64,7 @@ const Projects = () => {
       <section className={styles.section}>
         <SectionTitle title="Projects" />
 
-        <div style={{ display: "flex", flexDirection: "column", gap: "40px" }}>
+        <div className={styles.container}>
           {projectList.map((project) => (
             <ProjectCard
               key={project.id}
