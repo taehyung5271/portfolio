@@ -5,7 +5,7 @@ import userIcon from "../../../assets/icons/profileIcon.png";
 import adderssIcon from "../../../assets/icons/addressIcon.png";
 import calendarIcon from "../../../assets/icons/calendarIcon.png";
 import callIcon from "../../../assets/icons/callIcon.png";
-import educationIcon from "../../../assets/icons/educationIcon.png";
+import githubIcon from "../../../assets/icons/github.svg";
 import emailIcon from "../../../assets/icons/emailIcon.png";
 import { Element } from "react-scroll";
 
@@ -29,9 +29,10 @@ const About = () => {
             value="kth14200@gmail.com"
           />
           <AboutCard
-            iconSrc={educationIcon}
-            label="학력"
-            value="명지전문대학(컴퓨터공학과)"
+            iconSrc={githubIcon}
+            label="깃허브 프로필"
+            value="github.com/taehyung5271"
+            href="https://github.com/taehyung5271"
           />
         </div>
       </div>

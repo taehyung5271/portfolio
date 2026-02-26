@@ -1,5 +1,4 @@
 import About from "./sections/About";
-import Archiving from "./sections/Archiving";
 import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
 import Career from "./sections/Career";
@@ -41,7 +40,6 @@ const Home = () => {
         <Intro ref={introRef} />
         <About />
         <Skills />
-        <Archiving />
         <Projects />
         <Career />
         <Footer />
