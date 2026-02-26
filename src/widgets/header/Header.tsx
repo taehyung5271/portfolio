@@ -13,8 +13,8 @@ const Header = ({ variant }: HeaderProps) => {
         variant == "fixed" ? styles.fixed : styles.overlay,
       ].join(" ")}
     >
-      <div>
-        <div>KTH`s Portfolio</div>
+      <div className={styles.inner}>
+        <div className={styles.logo}>KTH`s Portfolio</div>
 
         <nav className={styles.nav}>
           <Link
@@ -39,18 +39,6 @@ const Header = ({ variant }: HeaderProps) => {
             activeClass={styles.active}
           >
             Skills
-          </Link>
-
-          <Link
-            to="archiving"
-            smooth
-            duration={500}
-            offset={-80}
-            spy
-            className={styles.link}
-            activeClass={styles.active}
-          >
-            Archiving
           </Link>
 
           <Link
