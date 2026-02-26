@@ -3,8 +3,8 @@ import Archiving from "./sections/Archiving";
 import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
 import Career from "./sections/Career";
-import Header from "../../widgets/Header/Header";
-import Footer from "../../widgets/Footer/Footer";
+import Header from "../../widgets/header/Header";
+import Footer from "../../widgets/footer/Footer";
 import styles from "./Home.module.css";
 
 const Home = () => {
