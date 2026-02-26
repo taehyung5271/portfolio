@@ -1,9 +1,46 @@
-.container {
-    display: flex;     
-    width: auto;
-    height: 80px;
-    padding: 4px 12px; 
-    border-radius: 4px; 
-    justify-content: center;
+.header{
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 50; 
+    transition: background-color 200ms ease, box-shadow 200ms ease;
+}
+
+.inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.overlay {
+    position: absolute;
+    background: transparent;
+    box-shadow: none;
+    color:#fff;
+}
+
+.fixed {
+    position:fixed;
+    background: #fff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    color: #111;
+}
+
+.nav {
+    display: flex;
+    gap: 24px
+}
+
+.link {
+    cursor: pointer;
+    user-select: none;
+    font-weight: 500;
+}
+
+.active {
+    color: #ff5c35;
+    font-weight: 700;
 }
