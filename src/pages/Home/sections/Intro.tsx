@@ -11,7 +11,6 @@ const Intro = forwardRef<HTMLElement, IntroProps>(function Intro(_props, ref) {
       <section ref={ref}>
         <div className={styles.section}>
           <SectionTitle title="- 김태형 - " />
-          <SectionTitle title="PORTFOLIO"/>
         </div>
       </section>
     </Element>
