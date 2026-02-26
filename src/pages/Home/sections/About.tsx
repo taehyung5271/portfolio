@@ -7,20 +7,35 @@ import calendarIcon from "../../../assets/icons/calendarIcon.png";
 import callIcon from "../../../assets/icons/callIcon.png";
 import educationIcon from "../../../assets/icons/educationIcon.png";
 import emailIcon from "../../../assets/icons/emailIcon.png";
+import { Element } from "react-scroll";
 
 const About = () => {
   return (
-    <div className={styles.section}>
-      <SectionTitle title="About Me" />
-      <div className={styles.grid}>
-        <AboutCard iconSrc={userIcon} label="이름" value="김태형" />
-        <AboutCard iconSrc={calendarIcon} label="생년월일" value="1997.04.08" />
-        <AboutCard iconSrc={adderssIcon} label="주소" value="서울시 성동구" />
-        <AboutCard iconSrc={callIcon} label="연락처" value="010-5067-5271" />
-        <AboutCard iconSrc={emailIcon} label="이메일" value="kth14200@gmail.com" />
-        <AboutCard iconSrc={educationIcon} label="학력" value="명지전문대학(컴퓨터공학과)" />
+    <Element name="about">
+      <div className={styles.section}>
+        <SectionTitle title="About Me" />
+        <div className={styles.grid}>
+          <AboutCard iconSrc={userIcon} label="이름" value="김태형" />
+          <AboutCard
+            iconSrc={calendarIcon}
+            label="생년월일"
+            value="1997.04.08"
+          />
+          <AboutCard iconSrc={adderssIcon} label="주소" value="서울시 성동구" />
+          <AboutCard iconSrc={callIcon} label="연락처" value="010-5067-5271" />
+          <AboutCard
+            iconSrc={emailIcon}
+            label="이메일"
+            value="kth14200@gmail.com"
+          />
+          <AboutCard
+            iconSrc={educationIcon}
+            label="학력"
+            value="명지전문대학(컴퓨터공학과)"
+          />
+        </div>
       </div>
-    </div>
+    </Element>
   );
 };
 
