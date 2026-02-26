@@ -1,5 +1,6 @@
 import SectionTitle from "../../../components/ui/SectionTitle";
 import ProjectCard from "../../../components/ui/ProjectCard";
+import styles from "./Projects.module.css"
 
 const Projects = () => {
   const projectList = [
@@ -27,7 +28,7 @@ const Projects = () => {
   ];
 
   return (
-    <section>
+    <section className={styles.section}>
       {/* 섹션 제목 */}
       <SectionTitle title="Projects" />
 

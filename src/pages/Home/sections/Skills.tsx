@@ -1,18 +1,17 @@
 import SectionTitle from "../../../components/ui/SectionTitle";
 import SkillTag from "../../../components/ui/SkillTag";
-import styles from "./Skills.module.css"
+import styles from "./Skills.module.css";
 
 const Skills = () => {
-    return (
-        <div>   
-            <div className={styles.Sections}>
-                <SectionTitle title="Skills" />
-            </div>
-            
+  return (
+    <div>
+      <div className={styles.section}>
+        <SectionTitle title="Skills" />
 
-            <SkillTag text="javaScript" bgColor="#000" txtColor="#FFF"/>
-        </div>
-    )
-}
+        <SkillTag text="javaScript" bgColor="#000" txtColor="#FFF" />
+      </div>
+    </div>
+  );
+};
 
 export default Skills;

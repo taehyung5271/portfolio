@@ -1,6 +1,13 @@
-.container {
+.section {
+    padding-top: 20px;
     width: 100%;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    height: 500px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  
+  gap: 24px;
+  justify-items: center; 
 }
