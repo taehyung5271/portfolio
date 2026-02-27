@@ -1,0 +1,38 @@
+.empty {
+  padding: 14px 12px;
+  color: #666;
+  font-size: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.list {
+  border-bottom: 1px solid #eee;
+}
+
+.item {
+  padding: 12px;
+  border-top: 1px solid #f2f2f2;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #666;
+}
+
+.nick {
+  font-weight: 700;
+  color: #333;
+}
+
+.date {
+  color: #999;
+}
+
+.content {
+  margin: 8px 0 0;
+  font-size: 13px;
+  color: #333;
+  line-height: 1.5;
+}

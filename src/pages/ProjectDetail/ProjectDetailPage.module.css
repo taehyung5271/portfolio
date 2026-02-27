@@ -1,0 +1,27 @@
+.page {
+  min-height: 100vh;
+  background: #d9d9d9; 
+  padding: 24px 0;
+}
+
+.container {
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.contentSection {
+  padding: 18px 20px 0 20px;
+}
+
+.commentSection {
+  padding: 0 20px 24px 20px;
+}
+
+.slugDebug {
+  padding: 12px 20px 20px;
+  font-size: 12px;
+  color: #777;
+}

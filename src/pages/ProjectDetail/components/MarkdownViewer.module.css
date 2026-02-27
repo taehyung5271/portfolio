@@ -1,0 +1,16 @@
+.wrap {
+  padding: 6px 0 16px;
+}
+
+.label {
+  font-size: 12px;
+  color: #999;
+  margin: 0 0 8px 0;
+}
+
+.box {
+  border: 1px solid #333;
+  min-height: 520px; 
+  padding: 16px;
+  background: #fff;
+}

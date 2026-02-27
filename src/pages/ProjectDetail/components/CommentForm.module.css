@@ -1,0 +1,55 @@
+.wrap {
+  padding: 12px;
+}
+
+.nickRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 10px;
+  border: 1px solid #eee;
+  background: #fafafa;
+}
+
+.icon {
+  opacity: 0.7;
+}
+
+.nickInput {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 13px;
+}
+
+.textarea {
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid #eee;
+  padding: 10px;
+  min-height: 90px;
+  resize: none;
+  outline: none;
+  font-size: 13px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.submit {
+  width: 180px;
+  height: 36px;
+  background: #e0e0e0;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

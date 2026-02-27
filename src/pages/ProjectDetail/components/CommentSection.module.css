@@ -1,0 +1,14 @@
+.wrap {
+  margin-top: 18px;
+}
+
+.title {
+  font-size: 12px;
+  color: #9a9a9a;
+  margin: 14px 0 10px;
+}
+
+.card {
+  border: 1px solid #e6e6e6;
+  background: #fff;
+}

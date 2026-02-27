@@ -38,7 +38,7 @@ export const normalizeProject = (row: ProjectRowRaw): ProjectUI => {
     endDate: row.end_date ?? undefined,
     serviceLink: row.service_link ?? undefined,
 
-    slug: row.slug ?? undefined,
+    slug: row.slug ,
     mdUrl: row.md_url ?? undefined,
     logoUrl: row.logo_url ?? undefined,
 

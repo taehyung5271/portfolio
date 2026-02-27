@@ -1,0 +1,59 @@
+.header {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 16px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background: #f1f1f1;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  color: #666;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+}
+
+.backBtn {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 8px;
+  background: #f5f5f5;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+}
+.backBtn:hover {
+  background: #ededed;
+}
