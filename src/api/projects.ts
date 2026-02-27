@@ -1,5 +1,5 @@
 import { supabase } from "./supabase";
-import type { ProjectRowRaw } from "../Types/ProjectRow";
+import type { ProjectRowRaw } from "../types/ProjectRow";
 
 export const fetchProjects = async (): Promise<ProjectRowRaw[]> => {
   const { data, error } = await supabase

@@ -1,5 +1,5 @@
-import type { ProjectRowRaw } from "../Types/ProjectRow";
-import type { ProjectUI } from "../Types/ProjectUI";
+import type { ProjectRowRaw } from "../types/ProjectRow";
+import type { ProjectUI } from "../types/ProjectUI";
 
 export const normalizeProject = (row: ProjectRowRaw): ProjectUI => {
   const detailsArr = Array.isArray(row.project_details)

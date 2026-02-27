@@ -1,5 +1,5 @@
-import type { CareerRowRaw } from "../Types/CareerRowRaw";
-import type { CareerUI } from "../Types/CareerUI";
+import type { CareerRowRaw } from "../types/CareerRowRaw";
+import type { CareerUI } from "../types/CareerUI";
 
 export const normalizeCareer = (row: CareerRowRaw): CareerUI => {
   // companies가 배열/객체 둘 다 올 수 있으니 방어

@@ -1,5 +1,5 @@
 import { supabase } from "./supabase";
-import type { CareerRowRaw } from "../Types/CareerRowRaw";
+import type { CareerRowRaw } from "../types/CareerRowRaw";
 
 export const fetchCareers = async (): Promise<CareerRowRaw[]> => {
   const { data, error } = await supabase

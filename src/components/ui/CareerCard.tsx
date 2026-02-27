@@ -1,7 +1,7 @@
 import styles from "./CareerCard.module.css";
 import SkillTag from "../ui/SkillTag";
-import type { Skill } from "../../Types/Skill";
-import type { CareerDescription } from "../../Types/CareerDescription";
+import type { Skill } from "../../types/Skill";
+import type { CareerDescription } from "../../types/CareerDescription";
 
 interface CareerCardProps {
   companyName: string;

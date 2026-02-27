@@ -5,8 +5,8 @@ import { Element } from "react-scroll";
 import { useQuery } from "@tanstack/react-query";
 import { fetchProjects } from "../../../api/projects";
 import { normalizeProject } from "../../../Utils/normalizeProject";
-import type { ProjectRowRaw } from "../../../Types/ProjectRow";
-import type { ProjectUI } from "../../../Types/ProjectUI";
+import type { ProjectRowRaw } from "../../../types/ProjectRow";
+import type { ProjectUI } from "../../../types/ProjectUI";
 
 const Projects = () => {
   const {

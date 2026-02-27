@@ -6,7 +6,7 @@ import { Element } from "react-scroll";
 
 import { fetchCareers } from "../../../api/career";
 import { normalizeCareer } from "../../../Utils/normalizeCareer";
-import type { CareerUI } from "../../../Types/CareerUI";
+import type { CareerUI } from "../../../types/CareerUI";
 
 const Career = () => {
   const {
