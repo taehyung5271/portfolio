@@ -64,4 +64,7 @@ table {
 
 :root {
   font-family: 'Noto Sans KR', sans-serif;
+  --header-h: 50px;
+  --footer-h: 60px; 
+
 }

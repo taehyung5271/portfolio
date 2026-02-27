@@ -21,7 +21,7 @@ const Header = ({ variant }: HeaderProps) => {
             to="about"
             smooth
             duration={500}
-            offset={-80}
+            offset={-50}
             spy
             className={styles.link}
             activeClass={styles.active}
@@ -33,7 +33,7 @@ const Header = ({ variant }: HeaderProps) => {
             to="skills"
             smooth
             duration={500}
-            offset={-80}
+            offset={-50}
             spy
             className={styles.link}
             activeClass={styles.active}
@@ -45,7 +45,7 @@ const Header = ({ variant }: HeaderProps) => {
             to="projects"
             smooth
             duration={500}
-            offset={-80}
+            offset={-50}
             spy
             className={styles.link}
             activeClass={styles.active}
@@ -57,7 +57,7 @@ const Header = ({ variant }: HeaderProps) => {
             to="career"
             smooth
             duration={500}
-            offset={-80}
+            offset={-50}
             spy
             className={styles.link}
             activeClass={styles.active}

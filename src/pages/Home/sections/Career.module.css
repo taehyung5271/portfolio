@@ -1,9 +1,10 @@
 .section {
   width: 100%;
-  min-height: 500px;
+  min-height: calc(100vh - var(--header-h) - var(--footer-h));
   background: yellow;
   padding: 4rem 1.5rem;
   overflow-x: hidden;
+  
 }
 
 .list{

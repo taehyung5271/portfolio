@@ -32,7 +32,7 @@ const Career = () => {
       ],
     },
     {
-      id: 1,
+      id: 2,
       companyName: "회사명(예시)",
       position: "Backend Developer",
       startDate: "2025.12.18",
