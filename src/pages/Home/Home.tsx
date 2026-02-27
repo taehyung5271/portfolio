@@ -14,7 +14,6 @@ const Home = () => {
   const [isInIntro, setIsInIntro] = useState(true);
 
   useEffect(() => {
-    //현재의 
     const el = introRef.current;
     if (!el) return;
 
