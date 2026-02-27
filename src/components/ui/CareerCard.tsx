@@ -64,8 +64,8 @@ const CareerCard = ({
               <SkillTag
                 key={skill.id}
                 text={skill.name}
-                bgColor={skill.background_color}
-                txtColor={skill.text_color}
+                bgColor={skill.background_color ?? "#eee"}
+                txtColor={skill.text_color ?? "#111"}
               />
             ))}
           </div>

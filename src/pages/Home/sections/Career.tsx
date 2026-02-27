@@ -4,7 +4,7 @@ import SectionTitle from "../../../components/ui/SectionTitle";
 import styles from "./Career.module.css";
 import { Element } from "react-scroll";
 
-import { fetchCareers } from "../../../Api/career";
+import { fetchCareers } from "../../../api/career";
 import { normalizeCareer } from "../../../Utils/normalizeCareer";
 import type { CareerUI } from "../../../Types/CareerUI";
 

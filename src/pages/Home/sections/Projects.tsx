@@ -3,8 +3,10 @@ import ProjectCard from "../../../components/ui/ProjectCard";
 import styles from "./Projects.module.css";
 import { Element } from "react-scroll";
 import { useQuery } from "@tanstack/react-query";
-import { fetchProjects } from "../../../Api/projects";
+import { fetchProjects } from "../../../api/projects";
 import { normalizeProject } from "../../../Utils/normalizeProject";
+import type { ProjectRowRaw } from "../../../Types/ProjectRow";
+import type { ProjectUI } from "../../../Types/ProjectUI";
 
 const Projects = () => {
   const {
@@ -12,20 +14,20 @@ const Projects = () => {
     isLoading,
     isError,
     error,
-  } = useQuery({
+  } = useQuery<ProjectRowRaw[], Error, ProjectUI[]>({
     queryKey: ["projects"],
     queryFn: fetchProjects,
     select: (raw) => raw.map(normalizeProject),
     staleTime: 1000 * 60 * 5,
   });
+
   return (
     <Element name="projects">
       <section className={styles.section}>
         <SectionTitle title="Projects" />
+
         {isLoading && <p>loading...</p>}
-        {isError && (
-          <p style={{ color: "crimson" }}>{(error as Error).message}</p>
-        )}
+        {isError && <p style={{ color: "crimson" }}>{error.message}</p>}
 
         {!isLoading && !isError && (
           <div className={styles.container}>
