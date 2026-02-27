@@ -1,18 +1,7 @@
 import styles from "./CareerCard.module.css";
 import SkillTag from "../ui/SkillTag";
-
-type Skill = {
-  id: number;
-  name: string;
-  background_color: string;
-  text_color: string;
-};
-
-type CareerDescription = {
-  id: number;
-  title: string;
-  detail: string;
-};
+import type { Skill } from "../../Types/Skill";
+import type { CareerDescription } from "../../Types/CareerDescription";
 
 interface CareerCardProps {
   companyName: string;
@@ -55,7 +44,7 @@ const CareerCard = ({
 
       <div className={styles.right}>
         <h3 className={styles.company}>
-          {companyName}
+          {companyName || "EMPTY"}
           {position && (
             <span className={styles.position}> ({position})</span>
           )}
