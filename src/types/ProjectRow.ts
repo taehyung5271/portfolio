@@ -30,7 +30,7 @@ export interface ProjectRowRaw {
   end_date: string | null;
   service_link: string | null;
 
-  slug: string | null;
+  slug: string;
   md_url: string | null;
   logo_url: string | null;
 

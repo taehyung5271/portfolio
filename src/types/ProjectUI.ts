@@ -21,7 +21,7 @@ export interface ProjectUI {
   endDate?: string;
   serviceLink?: string;
 
-  slug?: string;
+  slug: string;
   mdUrl?: string;
   logoUrl?: string;
 

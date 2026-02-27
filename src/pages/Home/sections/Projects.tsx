@@ -35,6 +35,7 @@ const Projects = () => {
               <ProjectCard
                 key={p.id}
                 title={p.title}
+                slug={p.slug}
                 projectIntro={p.projectIntro}
                 memberCount={p.memberCount}
                 startDate={p.startDate}
