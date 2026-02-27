@@ -56,3 +56,11 @@
   color: #ff5c35;
   font-weight: 400;
 }
+
+@media(max-width : 768px){
+  .inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

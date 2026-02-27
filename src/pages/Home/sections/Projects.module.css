@@ -20,3 +20,10 @@
   row-gap: 2rem;
   padding: 2rem 4rem;
 }
+
+@media (max-width: 1150px) {
+  .container{
+    display: flex;
+    justify-content: center;
+  }
+}
