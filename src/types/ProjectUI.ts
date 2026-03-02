@@ -20,6 +20,7 @@ export interface ProjectUI {
   startDate: string;
   endDate?: string;
   serviceLink?: string;
+  repoLink?: string;
 
   slug: string;
   mdUrl?: string;

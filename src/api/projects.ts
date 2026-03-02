@@ -13,6 +13,7 @@ export const fetchProjects = async (): Promise<ProjectRowRaw[]> => {
     start_date,
     end_date,
     service_link,
+    repo_link,
     slug,
     md_url,
     logo_url,
@@ -57,10 +58,10 @@ export const fetchProjectBySlug = async (slug: string): Promise<ProjectRowRaw> =
       start_date,
       end_date,
       service_link,
+      repo_link,
       slug,
       md_url,
       logo_url,
-      like_count,
       like_count,
 
       project_details (

@@ -125,6 +125,8 @@ const ProjectDetailPage = () => {
         <ProjectDetailHeader
           title={project!.title}
           subtitle={project!.projectIntro}
+          logoUrl={project!.logoUrl}
+          repoLink={project!.repoLink}
           onBack={() => navigate(-1)}
         />
 
