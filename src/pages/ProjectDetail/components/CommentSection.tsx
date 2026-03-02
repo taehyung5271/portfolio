@@ -15,15 +15,33 @@ interface CommentSectionProps {
   likeCount: number;
   commentCount: number;
   comments: CommentUI[];
+  likedByMe?: boolean;
+  onToggleLike?: () => void;
+  isLikePending?: boolean;
 }
 
-const CommentSection = ({ projectId, slug, likeCount, commentCount, comments }: CommentSectionProps) => {
+const CommentSection = ({
+  projectId,
+  slug,
+  likeCount,
+  commentCount,
+  comments,
+  likedByMe,
+  onToggleLike,
+  isLikePending,
+}: CommentSectionProps) => {
   return (
     <div className={styles.wrap}>
       <h2 className={styles.title}>댓글</h2>
 
       <div className={styles.card}>
-        <CommentMetaRow likeCount={likeCount} commentCount={commentCount} />
+        <CommentMetaRow
+          likeCount={likeCount}
+          commentCount={commentCount}
+          liked={likedByMe}
+          onToggleLike={onToggleLike}
+          isLoading={isLikePending}
+        />
         <CommentList comments={comments} />
         <CommentForm projectId={projectId} slug={slug} />
       </div>

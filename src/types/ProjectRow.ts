@@ -37,4 +37,5 @@ export interface ProjectRowRaw {
   project_details?: ProjectDetailRow[] | ProjectDetailRow | null;
   project_skills?: ProjectSkillRow[] | null;
   comments?: CommentRow[] | null;
+  like_count?: number | null;
 }

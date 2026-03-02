@@ -60,6 +60,8 @@ export const fetchProjectBySlug = async (slug: string): Promise<ProjectRowRaw> =
       slug,
       md_url,
       logo_url,
+      like_count,
+      like_count,
 
       project_details (
         id,

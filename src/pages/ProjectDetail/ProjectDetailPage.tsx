@@ -1,6 +1,6 @@
 import styles from "./ProjectDetailPage.module.css";
 import { useNavigate, useParams } from "react-router-dom";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 
 import ProjectDetailHeader from "./components/ProjectDetailHeader";
 import MarkdownViewer from "./components/MarkdownViewer";
@@ -8,6 +8,9 @@ import CommentSection from "./components/CommentSection";
 
 import { fetchProjectBySlug } from "../../api/projects";
 import { fetchMarkdownText } from "../../api/markdown";
+import { fetchProjectLikeStatus, createProjectLike, deleteProjectLike } from "../../api/likes";
+
+import { getOrCreateUserKey } from "../../Utils/userKey";
 
 import type { ProjectRowRaw } from "../../types/ProjectRow"
 import type { ProjectUI } from "../../types/ProjectUI";
@@ -16,6 +19,9 @@ import { normalizeProject } from "../../Utils/normalizeProject";
 const ProjectDetailPage = () => {
   const navigate = useNavigate();
   const { slug = "" } = useParams<{ slug: string }>();
+
+  const queryClient = useQueryClient();
+  const userKey = getOrCreateUserKey();
 
   // 프로젝트 상세 데이터
   const {
@@ -43,6 +49,52 @@ const ProjectDetailPage = () => {
     enabled: !!project?.mdUrl,
     staleTime: 1000 * 60 * 10,
   });
+
+  const { data: likedByMe = false, isLoading: isLikeStatusLoading } = useQuery<boolean>({
+    queryKey: ["project-like-status", project?.id, userKey],
+    queryFn: () =>
+      fetchProjectLikeStatus({
+        projectId: project!.id,
+        userKey: userKey ?? "",
+      }),
+    enabled: !!project && !!userKey,
+    staleTime: 1000 * 30,
+  });
+
+  const likeMutation = useMutation({
+    mutationFn: () =>
+      createProjectLike({
+        projectId: project!.id,
+        userKey: userKey ?? "",
+      }),
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["project", slug] });
+      queryClient.invalidateQueries({ queryKey: ["project-like-status", project?.id, userKey] });
+    },
+  });
+
+  const unlikeMutation = useMutation({
+    mutationFn: () =>
+      deleteProjectLike({
+        projectId: project!.id,
+        userKey: userKey ?? "",
+      }),
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["project", slug] });
+      queryClient.invalidateQueries({ queryKey: ["project-like-status", project?.id, userKey] });
+    },
+  });
+
+  const isLikePending = likeMutation.isPending || unlikeMutation.isPending;
+
+  const handleLikeToggle = () => {
+    if (!project || !userKey) return;
+    if (likedByMe) {
+      unlikeMutation.mutate();
+      return;
+    }
+    likeMutation.mutate();
+  };
 
   if (isProjectLoading) {
     return (
@@ -88,9 +140,12 @@ const ProjectDetailPage = () => {
           <CommentSection
             projectId={project!.id}
             slug={project!.slug}
-            likeCount={17} // 좋아요 아직 미연동
+            likeCount={project!.likeCount}
             commentCount={project!.comments.length}
             comments={project!.comments}
+            likedByMe={likedByMe}
+            isLikePending={isLikePending || isLikeStatusLoading}
+            onToggleLike={handleLikeToggle}
           />
         </section>
       </div>

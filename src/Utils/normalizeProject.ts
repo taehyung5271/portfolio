@@ -52,5 +52,6 @@ export const normalizeProject = (row: ProjectRowRaw): ProjectUI => {
     })),
 
     comments,
+    likeCount: row.like_count ?? 0,
   };
 };

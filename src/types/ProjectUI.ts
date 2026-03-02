@@ -28,4 +28,6 @@ export interface ProjectUI {
   descriptions: string[];
   skills: SkillUI[];
   comments: CommentUI[];
+  likeCount: number;
+  likedByMe?: boolean;
 }

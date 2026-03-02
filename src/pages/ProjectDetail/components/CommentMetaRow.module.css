@@ -12,3 +12,46 @@
   align-items: center;
   gap: 6px;
 }
+
+.likeButton {
+  border: none;
+  border-radius: 999px;
+  padding: 4px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  background: #f8fafc;
+  color: #0f172a;
+  cursor: pointer;
+  transition: transform 180ms ease, filter 180ms ease, box-shadow 180ms ease;
+  box-shadow: 0 0 0 0 rgba(15, 23, 42, 0);
+}
+
+.likeButton:hover:not(:disabled) {
+  transform: scale(1.02);
+  filter: brightness(1.1);
+}
+
+.likeButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.liked {
+  background: linear-gradient(150deg, #fdf2f8, #fee2e2);
+  color: #991b1b;
+  box-shadow: 0 4px 12px rgba(153, 27, 27, 0.3);
+}
+
+.likeWrapper {
+  border-radius: 999px;
+  border: 1px solid transparent;
+  padding: 2px;
+  transition: border 180ms ease, box-shadow 180ms ease, background 180ms ease;
+  display: inline-flex;
+}
+
+.likeWrapperActive {
+  border: 1px solid #2f80ed;
+  box-shadow: 0 0 0 6px rgba(59, 130, 246, 0.25);
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.15), transparent 65%);
+}
