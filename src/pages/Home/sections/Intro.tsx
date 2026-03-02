@@ -28,12 +28,15 @@ const Intro = forwardRef<HTMLElement, IntroProps>(function Intro(_props, ref) {
             to="about"
             smooth
             duration={500}
-            offset={-80}
+            offset={-50}
             spy
-            className={styles.button}
-            activeClass={styles.active}
+            className={styles.scrollHint}
+            aria-label="아래로 스크롤"
           >
-            더 알아보기 ↓
+            <span className={styles.scrollMouse}>
+              <span className={styles.scrollWheel} />
+            </span>
+            <span className={styles.scrollText}>scroll</span>
           </Link>
         </div>
       </section>
