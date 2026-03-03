@@ -28,7 +28,7 @@ const ProjectCard = ({
   descriptions,
 }: ProjectCardProps) => {
   const navigate = useNavigate();
-  if(!slug) return;
+  if (!slug) return;
   return (
     <article
       className={styles.card}
@@ -56,24 +56,22 @@ const ProjectCard = ({
       <div className={styles.titleBlock}>
         <h3 className={styles.title}>{title}</h3>
 
-        {serviceLink && (
-          <a
-            className={styles.link}
-            href={serviceLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span className={styles.linkIcon}>↗</span>
-            프로젝트에 연결된 실제링크
-          </a>
-        )}
+        <a
+          className={styles.link}
+          href={serviceLink || "https://www.example.com"}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <span className={styles.linkIcon}>↗</span>
+          {serviceLink || "프로젝트에 연결된 실제링크"}
+        </a>
       </div>
 
       <div className={styles.hr} />
 
       <section className={styles.body}>
-        <h4 className={styles.subTitle}>프로젝트 한줄 소개</h4>
-        {projectIntro && <p className={styles.intro}>{projectIntro}</p>}
+        {projectIntro && <p className={styles.subTitle}>{projectIntro}</p>}
 
         {descriptions.length > 0 && (
           <ul className={styles.descriptionList}>
