@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import styles from "./ProjectDetailPage.module.css";
 import { useNavigate, useParams } from "react-router-dom";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
@@ -20,13 +20,36 @@ import { normalizeProject } from "../../Utils/normalizeProject";
 const ProjectDetailPage = () => {
   const navigate = useNavigate();
   const { slug = "" } = useParams<{ slug: string }>();
+  const [scrollProgress, setScrollProgress] = useState(0);
 
   const queryClient = useQueryClient();
   const userKey = getOrCreateUserKey();
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    setScrollProgress(0);
   }, [slug]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (totalHeight <= 0) {
+        setScrollProgress(0);
+        return;
+      }
+
+      const current = Math.min(window.scrollY, totalHeight);
+      setScrollProgress((current / totalHeight) * 100);
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("resize", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
+    };
+  }, []);
 
   // 프로젝트 상세 데이터
   const {
@@ -126,6 +149,13 @@ const ProjectDetailPage = () => {
 
   return (
     <main className={styles.page}>
+      <div className={styles.progressBarContainer} aria-hidden="true">
+        <div
+          className={styles.progressBar}
+          style={{ width: `${Math.max(0, Math.min(100, scrollProgress))}%` }}
+        />
+      </div>
+
       <div className={styles.container}>
         <ProjectDetailHeader
           title={project!.title}
