@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import styles from "./ProjectDetailPage.module.css";
 import { useNavigate, useParams } from "react-router-dom";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
@@ -22,6 +23,10 @@ const ProjectDetailPage = () => {
 
   const queryClient = useQueryClient();
   const userKey = getOrCreateUserKey();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, [slug]);
 
   // 프로젝트 상세 데이터
   const {
