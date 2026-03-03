@@ -1,12 +1,12 @@
 import SectionTitle from "../../../components/ui/SectionTitle";
 import AboutCard from "../../../components/ui/AboutCard";
 import styles from "./About.module.css";
-import userIcon from "../../../assets/icons/profileIcon.png";
-import adderssIcon from "../../../assets/icons/addressIcon.png";
-import calendarIcon from "../../../assets/icons/calendarIcon.png";
-import callIcon from "../../../assets/icons/callIcon.png";
+import userIcon from "../../../assets/icons/profileIcon.svg";
+import adderssIcon from "../../../assets/icons/addressIcon.svg";
+import calendarIcon from "../../../assets/icons/calendarIcon.svg";
+import callIcon from "../../../assets/icons/callIcon.svg";
 import githubIcon from "../../../assets/icons/github.svg";
-import emailIcon from "../../../assets/icons/emailIcon.png";
+import emailIcon from "../../../assets/icons/emailIcon.svg";
 import { Element } from "react-scroll";
 
 const About = () => {

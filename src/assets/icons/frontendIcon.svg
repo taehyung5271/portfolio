@@ -1,0 +1,25 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+
+  <rect x="12" y="14" width="40" height="32" rx="4" fill="#f5d67b" stroke="#2f3a40" stroke-width="2"/>
+  <rect x="12" y="14" width="40" height="8" rx="4" fill="#fae7b2" stroke="#2f3a40" stroke-width="2"/>
+
+
+  <circle cx="18" cy="18" r="1.4" fill="#2f3a40" opacity="0.35"/>
+  <circle cx="23" cy="18" r="1.4" fill="#2f3a40" opacity="0.35"/>
+
+
+  <rect x="16" y="25" width="32" height="16" rx="2.5" fill="#fff7dd" opacity="0.9"/>
+  <path d="M18 29h12M18 32h9M18 35h14" stroke="#2f3a40" stroke-width="1.6" opacity="0.22" stroke-linecap="round"/>
+
+
+  <path d="M26 28l-7 4 7 4" fill="none" stroke="#2f3a40" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M38 28l7 4-7 4" fill="none" stroke="#2f3a40" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M33 26l-3 14" fill="none" stroke="#2f3a40" stroke-width="3" stroke-linecap="round"/>
+
+
+  <rect x="18" y="40.5" width="28" height="6.5" rx="2" fill="#2f3a40" opacity="0.14"/>
+  <text x="32" y="46" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#2f3a40">
+    HTML
+  </text>
+</svg>

@@ -2,10 +2,10 @@ import SectionTitle from "../../../components/ui/SectionTitle";
 import SkillTag from "../../../components/ui/SkillTag";
 import styles from "./Skills.module.css";
 import { Element } from "react-scroll";
-import languageIcon from "../../../assets/icons/languageIcon.png";
-import frontendIcon from "../../../assets/icons/frontendIcon.png";
-import backendIcon from "../../../assets/icons/backend.png";
-import devopsIcon from "../../../assets/icons/devOps.png";
+import languageIcon from "../../../assets/icons/languageIcon.svg";
+import frontendIcon from "../../../assets/icons/frontendIcon.svg";
+import backendIcon from "../../../assets/icons/backend.svg";
+import devopsIcon from "../../../assets/icons/devOps.svg";
 import { useQuery } from "@tanstack/react-query";
 import { fetchSkills } from "../../../api/skills";
 import { normalizeSkill } from "../../../Utils/normalizeSkill";
@@ -33,7 +33,7 @@ const Skills = () => {
 
           <div className={styles.container}>
             <div className={styles.skills_set}>
-              <img src={languageIcon} alt="language" />
+              <img src={languageIcon} alt="language"/>
               <div className={styles.skills_category}>language</div>
               <div className={styles.skills_list}>
                 {languageSkills.map((skill) => (

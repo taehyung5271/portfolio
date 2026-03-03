@@ -81,8 +81,15 @@ const Projects = () => {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
               />
-              <button className={styles.clearBtn} type="button" onClick={clearFilters}>
-                초기화
+              <button
+                className={styles.clearBtn}
+                type="button"
+                onClick={clearFilters}
+                disabled={query.trim().length === 0 && activeTags.length === 0}
+                aria-label="초기화"
+                title="초기화"
+              >
+                ✕
               </button>
             </div>
 
@@ -120,7 +127,6 @@ const Projects = () => {
                 />
               ))}
             </div>
-
             {filteredProjects.length === 0 && (
               <p className={styles.empty}>검색 결과가 없습니다.</p>
             )}

@@ -5,7 +5,7 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  background: green;
+  object-fit: contain;
   
 }
 
@@ -46,14 +46,14 @@
   align-items: center;
   gap: 6px;
   text-decoration: none;
-  color: #fff;
+  color: #000;
   cursor: pointer;
 }
 
 .scrollMouse {
   width: 28px;
   height: 44px;
-  border: 2px solid #fff;
+  border: 3px solid #111;
   border-radius: 999px;
   position: relative;
   display: inline-flex;
@@ -67,7 +67,7 @@
   width: 6px;
   height: 10px;
   border-radius: 999px;
-  background: #fff;
+  background: #000;
   animation: scroll-wheel 1.6s ease-in-out infinite;
 }
 
