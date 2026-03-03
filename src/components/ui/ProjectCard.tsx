@@ -55,17 +55,18 @@ const ProjectCard = ({
 
       <div className={styles.titleBlock}>
         <h3 className={styles.title}>{title}</h3>
-
-        <a
-          className={styles.link}
-          href={serviceLink || "https://www.example.com"}
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={(e) => e.stopPropagation()}
-        >
-          <span className={styles.linkIcon}>↗</span>
-          {serviceLink || "프로젝트에 연결된 실제링크"}
-        </a>
+        {serviceLink && (
+          <a
+            className={styles.link}
+            href={serviceLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <span className={styles.linkIcon}>↗</span>
+            {serviceLink}
+          </a>
+        )}
       </div>
 
       <div className={styles.hr} />
