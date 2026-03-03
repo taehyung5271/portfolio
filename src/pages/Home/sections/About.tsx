@@ -19,7 +19,7 @@ const About = () => {
           <AboutCard
             iconSrc={calendarIcon}
             label="생년월일"
-            value="1997.04.08 1565153513"
+            value="1997.04.08"
           />
           <AboutCard iconSrc={adderssIcon} label="주소" value="서울시 성동구" />
           <AboutCard iconSrc={callIcon} label="연락처" value="010-5067-5271" />
