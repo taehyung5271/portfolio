@@ -1,8 +1,3 @@
----
-title: KTH Portfolio
-slug: portfolio
----
-
 # KTH Portfolio
 
 > 소개, 기술, 프로젝트, 경력을 한 페이지에서 보여주는 개인 포트폴리오 웹앱
